@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+</head>
+<body>
+    <main id="container">
+        <form id="calculator" class="calculator">
+            <h2>
+                Calculadora
+            </h2>
+            <div>
+                <input required id="n1" type="number" placeholder="Digite o primeiro número aqui:">
+            </div>
+            <div>
+                <label for="operacao"></label>
+                <select required name="" id="operacao">
+                    <option value="">Escolha a operação:</option>
+                    <option class="" value="somar"> + </option>
+                    <option class="" value="subtrair"> - </option>
+                    <option class="" value="multiplicar"> x </option>
+                    <option class="" value="dividir"> / </option>
+                </select>
+            </div>
+            <div>
+                <input required id="n2" type="number" placeholder="Digite o segundo número aqui:">
+            </div>
+            <div id="recarregar">
+                <button type="reset" id="reset resetar">Reiniciar</button>
+            </div>
+            <div id="resultado">
+            <h4>Resultado:</h4>
+            <span id="total"></span>
+            </div>
+            <div>
+                <button type="submit" id="cal" >Calcular</button>
+            </div>
+        </form>
+    </main>
+        <script src="./index.js"></script>
+</body>
+</html>
